@@ -1,4 +1,4 @@
-/* General Reset */
+/* 🌎 General Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,27 +11,32 @@ body {
   background: linear-gradient(to bottom right, #f0f8ff, #e6ffe6);
   color: #333;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* Header */
+/* 🎯 Header */
 header {
   text-align: center;
   margin-bottom: 20px;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 header h1 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #008080;
 }
 
-/* Main */
+/* 🏠 Main Section */
 main {
-  max-width: 600px;
+  max-width: 800px;
   margin: 0 auto 20px auto;
   background: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 main img {
@@ -41,22 +46,29 @@ main img {
   margin: 10px auto;
   border-radius: 50%;
   border: 3px solid #008080;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,128,128,0.3);
 }
 
 main p {
   padding: 0;
 }
 
-/* ✅ Aside Styling */
+/* 🌍 Aside Section */
 aside {
-  max-width: 600px;
+  max-width: 800px;
   margin: 20px auto;
-  padding: 15px;
+  padding: 20px;
   border: 2px solid #008080;
-  border-radius: 10px;
+  border-radius: 15px;
   background-color: #f9fff9;
   color: #004d40;
   text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
 }
 
 aside img {
@@ -64,52 +76,76 @@ aside img {
   height: auto;
   display: block;
   margin: 10px auto;
-  border-radius: 10px;
+  border-radius: 15px;
   border: 2px solid #004d40;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* ✅ Footer Styling */
-footer {
-  margin-top: 20px;
-  padding-top: 10px;
-  border-top: 2px solid #008080;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555;
+aside img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,77,64,0.3);
 }
-/* ✅ Responsive Design */
+
+/* 🎨 Footer Styling */
+footer {
+  margin-top: auto;
+  padding: 15px;
+  background: linear-gradient(to right, #008080, #004d40);
+  color: white;
+  font-size: 0.95rem;
+  text-align: center;
+  border-top: 3px solid #ffffff55;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 1024px) {
+  main, aside {
+    max-width: 90%;
+  }
+}
+
 @media (max-width: 768px) {
   body {
     padding: 10px;
   }
 
   header h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 
   main, aside {
     max-width: 100%;
     margin: 10px 0;
-    padding: 10px;
+    padding: 15px;
   }
 
   main img {
-    width: 120px; /* slightly smaller profile picture */
+    width: 120px;
   }
 
   aside img {
-    width: 100%; /* take full width of container */
-    max-width: 280px; /* but not too big */
+    width: 100%;
+    max-width: 280px;
   }
 
   footer {
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    padding: 12px;
   }
 }
 
 @media (max-width: 480px) {
   header h1 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   main img {
@@ -121,6 +157,6 @@ footer {
   }
 
   p {
-    font-size: 0.95rem; /* slightly smaller text for small phones */
+    font-size: 0.95rem;
   }
 }
