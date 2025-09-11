@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mike George Okello - Home Page</title>
+  <title>Mike George Okello | WDD130 - Home Page</title>
 
-  <!-- ✅ NEW META TAGS -->
+  <!-- Meta Tags -->
   <meta name="description" content="Home page for Mike George Okello - WDD130 student. Learn more about my journey, my course work, and my country Uganda.">
   <meta name="author" content="Mike George Okello">
 
@@ -13,20 +13,24 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to My Home Page</h1>
-    <p>Hello! I'm <strong>Mike George Okello</strong> from Uganda, currently taking WDD130 with BYU Pathway.</p>
+    <!-- ✅ Added <nav> inside <header> -->
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+    </nav>
   </header>
 
   <main>
-    <h2>About Me</h2>
+    <!-- ✅ Moved <h1> here and included student name + course -->
+    <h1>Mike George Okello | WDD130 Home Page</h1>
     <img src="images/profile.jpg" alt="Mike George Okello profile photo">
     <p>
+      Hello! I'm <strong>Mike George Okello</strong> from Uganda, currently taking <strong>WDD130</strong> with BYU-Pathway.
       I am passionate about web development and excited to learn HTML, CSS, and more. 
       This page showcases my progress as I work through the WDD130 course.
     </p>
   </main>
 
-  <!-- ✅ NEW ASIDE ELEMENT -->
   <aside>
     <h2>Uganda</h2>
     <img src="images/uganda.jpeg" alt="Uganda Landscape">
@@ -37,7 +41,7 @@
   </aside>
 
   <footer>
-    <p>&copy; 2025 | Mike George Okello | gokello@byupathway.edu | +256 778 631 124</p>
+    <p>&copy; 2025 | Mike George Okello | Uganda</p>
   </footer>
 </body>
 </html>
