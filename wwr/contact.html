@@ -3,29 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mike Okello - Personal Website</title>
+  <title>Week 05 Assignment</title>
   <style>
     body {
       margin: 0;
       font-family: Arial, Helvetica, sans-serif;
       background-color: #f9f9f9;
       color: #333;
+      line-height: 1.6;
     }
-    header, footer {
+
+    /* Header and Navigation */
+    header {
       background-color: #003366;
       color: white;
       text-align: center;
       padding: 15px 10px;
     }
     header img {
-      height: 40px;
-      vertical-align: middle;
+      height: 50px;
+      margin-bottom: 10px;
     }
     header h1 {
-      display: inline-block;
-      margin: 0 10px;
-      font-size: 1.5rem;
-      vertical-align: middle;
+      margin: 5px 0;
+      font-size: 1.8rem;
     }
     nav {
       margin-top: 10px;
@@ -33,14 +34,18 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 10px;
+      margin: 0 15px;
       font-weight: bold;
+      transition: color 0.3s ease; /* improvement */
     }
     nav a:hover {
       text-decoration: underline;
+      color: #FFD700; /* improvement */
     }
+
+    /* Main content */
     main {
-      max-width: 800px;
+      max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: white;
@@ -49,56 +54,100 @@
     }
     h2 {
       color: #003366;
+      margin-top: 0;
     }
+    section {
+      margin-bottom: 30px;
+    }
+
+    /* Contact box */
     .contact-info {
-      margin: 20px 0;
       padding: 15px;
       background: #eef3f7;
       border-radius: 6px;
+    }
+    .contact-info a {
+      color: #003366;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 0.3s ease; /* improvement */
+    }
+    .contact-info a:hover {
+      text-decoration: underline;
+      color: #0055aa; /* improvement */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
     }
     footer p {
       margin: 5px 0;
       font-size: 0.9rem;
     }
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+      transition: opacity 0.3s ease; /* improvement */
+    }
+    footer a:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    /* Responsive tweak */
+    @media (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 8px 0;
+      }
+      main {
+        padding: 15px;
+      }
+    }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
+  <!-- Header Section -->
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="Logo">
-    <h1>Mike Okello</h1>
+    <img src="https://via.placeholder.com/120x50?text=Logo" alt="Logo">
+    <h1>My Week 05 Assignment</h1>
     <nav>
+      <a href="#home">Home</a>
       <a href="#about">About</a>
-      <a href="#portfolio">Portfolio</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
+    <section id="home">
+      <h2>Welcome</h2>
+      <p>This is a demonstration of my CSS assignment for Week 05. I have applied styling to the header, navigation, main content, contact information box, and footer.</p>
+    </section>
+
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hello! My name is <strong>Mike Okello</strong>. Welcome to my personal website. I am passionate about learning, technology, and professional growth. This site will showcase my work, projects, and how you can get in touch with me.</p>
+      <h2>About This Page</h2>
+      <p>The purpose of this page is to show my ability to apply CSS rules professionally and neatly. I have also added responsive design, hover effects, and transitions for a polished user experience.</p>
     </section>
 
-    <section id="portfolio">
-      <h2>Portfolio</h2>
-      <p>Here, I will share some of my recent projects and assignments, including coding activities like the <em>Personal Budget Program</em>.</p>
-    </section>
-
-    <section id="contact" class="contact-info">
+    <section id="contact">
       <h2>Contact Me</h2>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/256778631124" target="_blank">+256 778 631124</a></p>
-      <p><strong>Email:</strong> <a href="mailto:gokello@byupathway.edu">gokello@byupathway.edu</a></p>
+      <div class="contact-info">
+        <p>You can reach me through the following:</p>
+        <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
+      </div>
     </section>
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 Mike Okello. All rights reserved.</p>
-    <p>Connect with me on <a href="https://wa.me/256778631124" target="_blank" style="color: #FFD700;">WhatsApp</a> or <a href="mailto:gokello@byupathway.edu" style="color: #FFD700;">Email</a>.</p>
+    <p>&copy; 2025 My Week 05 Assignment. All rights reserved.</p>
+    <p>Follow me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
   </footer>
-
 </body>
 </html>
