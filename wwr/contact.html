@@ -1,153 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Week 05 Assignment</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    /* Header and Navigation */
-    header {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-    }
-    header img {
-      height: 50px;
-      margin-bottom: 10px;
-    }
-    header h1 {
-      margin: 5px 0;
-      font-size: 1.8rem;
-    }
-    nav {
-      margin-top: 10px;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s ease; /* improvement */
-    }
-    nav a:hover {
-      text-decoration: underline;
-      color: #FFD700; /* improvement */
-    }
-
-    /* Main content */
-    main {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
-    }
-    h2 {
-      color: #003366;
-      margin-top: 0;
-    }
-    section {
-      margin-bottom: 30px;
-    }
-
-    /* Contact box */
-    .contact-info {
-      padding: 15px;
-      background: #eef3f7;
-      border-radius: 6px;
-    }
-    .contact-info a {
-      color: #003366;
-      font-weight: bold;
-      text-decoration: none;
-      transition: color 0.3s ease; /* improvement */
-    }
-    .contact-info a:hover {
-      text-decoration: underline;
-      color: #0055aa; /* improvement */
-    }
-
-    /* Footer */
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 15px 10px;
-    }
-    footer p {
-      margin: 5px 0;
-      font-size: 0.9rem;
-    }
-    footer a {
-      color: #FFD700;
-      text-decoration: none;
-      transition: opacity 0.3s ease; /* improvement */
-    }
-    footer a:hover {
-      text-decoration: underline;
-      opacity: 0.8;
-    }
-
-    /* Responsive tweak */
-    @media (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 8px 0;
-      }
-      main {
-        padding: 15px;
-      }
-    }
-  </style>
+  <title> White Water Rafting|Contact Info </title>
+  <meta name="description" content="contact us for booking, inquries">
+  <meta name="author" content="Mike Okello"
+  <link rel="stylesheet" href="styles/contact1.css">
 </head>
 <body>
   <!-- Header Section -->
   <header>
-    <img src="https://via.placeholder.com/120x50?text=Logo" alt="Logo">
-    <h1>My Week 05 Assignment</h1>
+    <div class="logo">
+      <img src="images/logo.png" alt="White Water Rafting Logo">
+    </div>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">about us</a></li>
+      </ul>
     </nav>
   </header>
 
   <!-- Main Content -->
   <main>
-    <section id="home">
-      <h2>Welcome</h2>
-      <p>This is a demonstration of my CSS assignment for Week 05. I have applied styling to the header, navigation, main content, contact information box, and footer.</p>
+    <section>
+        <h1> Contact Info</h1>
+
+        <p>White Water Rafting</p>
+        <p>34 Bridge Street</p>
+        <p>Nile Jinja</p>
+        <p>+256778631124</p>
+        <p>georgemikeokello@gmail.com</p>
+        <div class="map-form-wrapper">
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1712.046784591556!2d33.19836126691!3d0.43003878552779373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sug!4v1759749538241!5m2!1sen!2sug" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <form>
+          <fieldset>
+           <legend>Contact Us</legend>
+          <!-- your form fields here -->
+          </fieldset>
+        </form>
+        </div>
+    </section>
+    <form>
+      <fieldset>
+        <legend> Contact us</legend>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="Email">Email:</label>
+        <input type="text" id="Email"Email="Email" required><br><br>
+        <P>What is the purpose of your massage?</P>
+        <label>
+          <imput type="radio" id="inqury" name="purpose" value="inqury" required>
+            General inqury
+          </label><br>
+          <label>
+          <imput type="radio" id="Reservation" name="purpose" value="Reservation" required>
+            Reservation Question
+          </label><brGeneral inqury
+          <label>
+          <imput type="radio" id="Suggestion" name="purpose" value="Suggestion" required>
+            Website Suggestion
+          </label><br>
+        </label><br><br>
+        <label for="message">Your Message</label><br>
+        <textarea id="message" name="message" raws="5" cols="40" required ></textarea><br><br>
+        <label>
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" required>
+          please subscribe to the monthly newsletter
+        </label><br><br>
+        <button type="submit">submit</button>
+        </label>
+      </fieldset>
+    </form>
+    <section>
+      <h2> Staff</h2>
+    <div class="Employee-list">
+  <div class="Employee">
+    <img src="images/image 1.jpeg" alt="employee 1">
+    <h2>Jimmy</h2>
+    <p>Assistant Manager</p>
+  </div>
+  <div class="Employee">
+    <img src="images/image 2.jpeg" alt="employee 2">
+    <h2>Morish</h2>
+    <p>Manager</p>
+  </div>
+  <div class="Employee">
+    <img src="images/image 3.jpeg" alt="employee 3">
+    <h2>John</h2>
+    <p>Supervisor</p>
+  </div>
+</div>
+
     </section>
 
-    <section id="about">
-      <h2>About This Page</h2>
-      <p>The purpose of this page is to show my ability to apply CSS rules professionally and neatly. I have also added responsive design, hover effects, and transitions for a polished user experience.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-info">
-        <p>You can reach me through the following:</p>
-        <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
-        <p>Phone: <a href="tel:+1234567890">+123 456 7890</a></p>
-      </div>
-    </section>
-  </main>
+    
 
   <!-- Footer Section -->
   <footer>
-    <p>&copy; 2025 My Week 05 Assignment. All rights reserved.</p>
-    <p>Follow me on <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+    <p>&copy; 2025 White Water Rafting | Mike Okello</p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.jpeg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twiter.jpeg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.jpeg" alt="Instagram">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
