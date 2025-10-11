@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RapidsX Rafting – Your ultimate white water rafting adventure! Discover our mission, history, and exciting adventures.">
-    <meta name="author" content="Mike Okello">
-    <title>About Us | RapidsX Rafting</title>
-    <link rel="stylesheet" href="styles/rafting.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> White Water Rafting|Our home page </title>
+  <meta name="description" content="Explore our home">
+  <meta name="author" content="Mike Okello"
+  <link hrel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="RapidsX Rafting Logo">
-            <h1>RapidsX</h1>
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="White Water Rafting Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">about us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <img src="images/hero2.jpeg" alt="Group rafting down a scenic river">
+      <div class="hero-text">
+        <h1>Experience the Thrill of White Water Rafting!</h1>
+        <p>Adventure awaits you on the river — join us for unforgettable journeys filled with excitement, teamwork, and fun.</p>
+      </div>
+    </section>
+
+    <!-- Newsletter Signup Section -->
+    <section class="newsletter">
+      <h2>Join Our Adventure Community</h2>
+      <p>Stay updated on our latest trips, offers, and rafting news. Sign up for our newsletter today!</p>
+      <form action="#" method="post">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <!-- Purpose and Offerings Section -->
+    <section class="purpose">
+      <h2>Why Choose White Water Rafting Adventures?</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="images/hero 7.jpg" alt="Family rafting fun">
+          <h3>Fun for Everyone</h3>
+          <p>Whether you’re a beginner or an expert, we have trips designed for all skill levels. Enjoy the perfect mix of fun and safety on every ride.</p>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html" class="active">About Us</a>
-            <a href="trips.html">Trips</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <div class="hero">
-            <img src="images/hero.jpeg" alt="Rafting Adventure">
-            <div class="overlay">
-                <h2>Welcome to RapidsX</h2>
-                <p>Where Adventure Meets Nature</p>
-            </div>
-            <article class="intro-card">
-                <img src="images/hayyp_client.jpeg" alt="Happy Client">
-                <p>At RapidsX, we believe adventure brings people closer together. Our mission is to provide thrilling, safe, and unforgettable rafting experiences. With world-class guides and breathtaking river routes, every trip is an adventure you’ll never forget!</p>
-            </article>
+        <div class="grid-item">
+          <img src="images/hero 5.jpg" alt="Beautiful river view">
+          <h3>Explore Stunning Rivers</h3>
+          <p>From calm scenic floats to roaring rapids, discover nature’s beauty from a whole new perspective — the heart of the river.</p>
         </div>
-
-        <!-- History Section -->
-        <section class="fade-in">
-            <h2>Our History</h2>
-            <p>RapidsX began over 10 years ago with a single raft and a dream to share the joy of river adventures. Today, we guide thousands of thrill-seekers every season, offering exciting trips for families, first-timers, and adrenaline junkies alike.</p>
-        </section>
-
-        <!-- Adventure Section -->
-        <section class="fade-in">
-            <h2>Adventure Awaits You!</h2>
-            <p>Choose from beginner-friendly floats to extreme white-water challenges. Whether you’re seeking excitement or a peaceful nature escape, RapidsX has the perfect adventure for you.</p>
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 RapidsX Rafting | Designed by Mike Okello</p>
-            <div class="socialmedia">
-                <a href="https://facebook.com" target="_blank"><img src="images/facebook.jpeg" alt="Facebook"></a>
-                <a href="https://twitter.com" target="_blank"><img src="images/twiter.jpeg" alt="Twitter"></a>
-                <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
-            </div>
+        <div class="grid-item">
+          <img src="images/image 3.jpeg" alt="Rafting guides team">
+          <h3>Expert Guides</h3>
+          <p>Our certified guides ensure your safety while sharing their passion for the river. Every trip is a learning experience and a thrilling journey.</p>
         </div>
-    </footer>
+      </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="cta">
+      <h2>Ready to Make a Splash?</h2>
+      <p>Don’t wait — your next adventure starts here. Explore our trips and find the one that’s perfect for you!</p>
+      <a href="trips.html" class="cta-button">View Our Trips</a>
+    </section>
+  </main>
+
+
+    
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 White Water Rafting | Mike Okello</p>
+    <div class="social">
+      <a href="https://facebook.com" target="_blank">
+        <img src="images/facebook.jpeg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com" target="_blank">
+        <img src="images/twiter.jpeg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com" target="_blank">
+        <img src="images/instagram.jpeg" alt="Instagram">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>

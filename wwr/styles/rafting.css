@@ -164,4 +164,555 @@ footer .social a img {
   margin: 0 10px;
   vertical-align: middle;
 }
+/* ========== GLOBAL RESET ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #222;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ========== HEADER ========== */
+header {
+  background-color: #004d40;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 5%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 45px;
+  width: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
+}
+
+/* ========== NAVIGATION ========== */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffeb3b;
+}
+
+/* ========== HERO SECTION ========== */
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: 120px; /* Much smaller hero image */
+  object-fit: cover;
+  filter: brightness(75%);
+  border-bottom: 3px solid #004d40;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 77, 64, 0.6);
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  max-width: 85%;
+}
+
+.hero-text h1 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-text p {
+  font-size: 0.85rem;
+}
+
+/* ========== NEWSLETTER SECTION ========== */
+.newsletter {
+  background: #ffffff;
+  text-align: center;
+  padding: 1.8rem 5%;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.newsletter h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+}
+
+.newsletter form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.newsletter input {
+  width: 100%;
+  padding: 0.45rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: #004d40;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #00796b;
+}
+
+/* ========== PURPOSE / OFFERINGS ========== */
+.purpose {
+  padding: 1.8rem 5%;
+  text-align: center;
+}
+
+.purpose h2 {
+  color: #004d40;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.grid-item {
+  background-color: #ffffff;
+  padding: 0.9rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+  transform: translateY(-3px);
+}
+
+/* ✅ Significantly smaller but clear images */
+.grid-item img {
+  width: 80%;
+  max-width: 100px; /* smaller display even on desktop */
+  height: 90px; /* compact, proportional */
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 0 auto 0.6rem;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.03);
+}
+
+/* ========== CALL TO ACTION ========== */
+.cta {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1.8rem 5%;
+  margin-top: 1.5rem;
+}
+
+.cta h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.4rem;
+}
+
+.cta p {
+  font-size: 0.9rem;
+}
+
+.cta-button {
+  display: inline-block;
+  margin-top: 0.8rem;
+  background-color: #ffeb3b;
+  color: #004d40;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffe033;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  background-color: #004d40;
+  color: white;
+  text-align: center;
+  padding: 1rem 5%;
+  margin-top: 2rem;
+}
+
+footer .social {
+  margin-top: 0.5rem;
+}
+
+footer .social a img {
+  height: 18px;
+  width: 18px;
+  object-fit: cover;
+  margin: 0 0.25rem;
+  border-radius: 50%;
+  opacity: 0.9;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+footer .social a img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 900px) {
+  .hero img {
+    height: 100px;
+  }
+
+  .grid-item img {
+    max-width: 90px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .hero img {
+    height: 90px;
+  }
+
+  .hero-text {
+    position: static;
+    transform: none;
+    background: rgba(0, 77, 64, 0.85);
+    margin-top: 0.6rem;
+  }
+
+  .grid-item img {
+    max-width: 90px;
+    height: 70px;
+  }
+
+  .logo img {
+    height: 35px;
+  }
+
+  footer .social a img {
+    height: 16px;
+    width: 16px;
+  }
+}
+/* ===============================
+   White Water Rafting Stylesheet
+   Author: Mike Okello
+   File: rafting.css
+   =============================== */
+
+/* --- Global Styles --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  background-color: #f8f9fa;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* --- Header and Navigation --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover,
+nav a.active {
+  color: #ffd700;
+}
+
+/* --- Hero Section --- */
+.hero {
+  text-align: center;
+  background: url("../images/rafting_hero.jpg") center/cover no-repeat;
+  color: white;
+  padding: 6rem 1rem;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.6);
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto 2rem auto;
+  font-size: 1.1rem;
+}
+
+.cta-button {
+  background-color: #ffd700;
+  color: #003366;
+  padding: 0.8rem 1.6rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #ffc107;
+}
+
+/* --- Trips Section --- */
+.trips {
+  padding: 3rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.trips h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 2rem;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.trip-card {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.trip-card img {
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.trip-card h3 {
+  color: #003366;
+  margin-bottom: 0.5rem;
+}
+
+.trip-card p {
+  margin-bottom: 0.8rem;
+}
+
+/* --- Trip Table Section --- */
+.trip-table {
+  background-color: #eef3f9;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.trip-table h2 {
+  color: #003366;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #003366;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+/* --- Call to Action Section --- */
+.cta {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 3rem 1rem;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Footer Section --- */
+footer {
+  background-color: #002244;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+footer .social {
+  margin-top: 0.8rem;
+}
+
+footer .social a {
+  margin: 0 0.5rem;
+  display: inline-block;
+}
+
+footer .social img {
+  width: 24px;
+  height: 24px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+footer .social img:hover {
+  transform: scale(1.2);
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .trip-grid {
+    grid-template-columns: 1fr;
+  }
+
+  table {
+    width: 100%;
+  }
+}
