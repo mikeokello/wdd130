@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – George Mike Okello</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals | George Mike Okello | Uganda | Home page showcasing web fundamentals project and personal introduction.">
+    <meta name="author" content="George Mike Okello">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131: Dynamic Web Fundamentals – George Mike Okello</span>
+        <nav>
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>George Mike Okello</h1>
+
+        <section class="card about-me">
+            <h2>About Me</h2>
+            <img src="images/george.jpg" alt="George Mike Okello" class="profile-img">
+            <p>Hello! My name is <strong>George Mike Okello</strong>, a 25-year-old student from <strong>Uganda</strong>—a beautiful country known as the <em>Pearl of Africa</em>. I am currently studying <strong>Software Development</strong> at <strong>Brigham Young University – Idaho</strong> through BYU–Pathway Worldwide.</p>
+            <p>You can contact me at <a href="mailto:gokello@byupathway.edu">gokello@byupathway.edu</a> or call <strong>+256 778 631 123</strong>.</p>
+            <div class="flag-container">
+                <img src="images/uganda-flag.jpg" alt="Uganda Flag" class="flag">
+                <p>Uganda is rich in culture, wildlife, and warm hospitality. It truly lives up to its name – the Pearl of Africa!</p>
+            </div>
+        </section>
+
+        <section class="card resources">
+            <h2>Web Development Resources</h2>
+            <ul>
+                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a></li>
+                <li><a href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+                <li><a href="https://javascript.info/" target="_blank">JavaScript.info</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | George Mike Okello | Uganda</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
